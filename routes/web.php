@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//Homepage (Movie Chronological)
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage');
+});
+
+//Specific Movie Details
+Route::get('movieDetails', function () {
+    return view('movie-details');
+});
+
+Route::get('about', function () {
+    return view('about-author');
 });
